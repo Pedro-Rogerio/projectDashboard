@@ -15,33 +15,124 @@
                 <img src="../assets/img/logo.jpg" id="invest"><!--Logo que pode ser substituído por uma imagem-->
                 <div class="media">
                     <img src="../assets/img/user.jpeg">
-                    <a href="#"><i class="fa-solid fa-bars" style="color:#545454;"></i></a>
+                    <i class="fa-solid fa-bars"></i>
                 </div>
             </nav>
             <div class="corpo">
                 <aside>
                     <div class="barra">
-                        <i class="fa-solid fa-table-cells-large"></i>
-                        <h4>Dashboard</h4>
-                        <i class="fa-solid fa-rotate"></i>
-                        <h4>Exchange</h4>
-                        <i class="fa-solid fa-wallet"></i>
-                        <h4>Wallet</h4>
-                        <i class="fa-solid fa-headset"></i>
-                        <h4>Help Center</h4>
-                        <i class="fa-solid fa-gear"></i>
-                        <h4>Settings</h4>
+                        <div class="i1">
+                            <i class="fa-solid fa-table-cells-large"></i>
+                            <h4>Dashboard</h4>
+                        </div>
+                        <div class="i2">
+                            <i class="fa-solid fa-rotate"></i>
+                            <h4>Exchange</h4>
+                        </div>
+                        <div class="i3">
+                            <i class="fa-solid fa-wallet"></i>
+                            <h4>Wallet</h4>
+                        </div>
+                        <div class="i4">
+                            <i class="fa-solid fa-headset"></i>
+                        <h4>FAQ</h4>
+                        </div>
+                        <div class="i5">
+                            <i class="fa-solid fa-gear"></i>
+                            <h4>Settings</h4>
+                        </div>
                     </div>
                 </aside>
                 <div class="main">
-                    <h1>Overview</h1>
+                    <h1 id="over">Overview</h1>
                     <div class="allcards">
                         <div class="card1">
-                            
+                            <div class="top">
+                                <img src="../assets/img/master.png" alt="" srcset="">
+                            </div>
+                            <div class="mid">
+                                <div class="valor">
+                                    <img id="euro" src="../assets/img/EURO.png" alt="" srcset="">
+                                    <p>1895,00</p>
+                                </div>
+                                <img id="chip" src="../assets/img/chip.png" alt="" srcset="">
+                            </div>
+                            <div class="bot">
+                                <div class="dados">
+                                    <h1>XXXX XXXX XXXX XXXX</h1>
+                                    <p>John Doe</p>
+                                </div>
+                                <div class="valid">
+                                    <h1>Valid</h1>
+                                    <p>02/26</p>
+                                </div>
+                                <div class="seg">
+                                    <h1>CVV</h1>
+                                    <p>123</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card2">
+                            <div class="top">
+                                <img src="../assets/img/amex.png" alt="" srcset="">
+                            </div>
+                            <div class="mid">
+                                <div class="valor">
+                                    <img id="euro" src="../assets/img/EURO.png" alt="" srcset="">
+                                    <p>3595,00</p>
+                                </div>
+                                <img id="chip" src="../assets/img/chip.png" alt="" srcset="">
+                            </div>
+                            <div class="bot">
+                                <div class="dados">
+                                    <h1>XXXX XXXXXX XXXXX</h1>
+                                    <p>John Doe</p>
+                                </div>
+                                <div class="valid">
+                                    <h1>Valid</h1>
+                                    <p>08/23</p>
+                                </div>
+                                <div class="seg">
+                                    <h1>CVV</h1>
+                                    <p>3829</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card3">
+                            <div class="top">
+                                <img src="../assets/img/master.png" alt="" srcset="">
+                            </div>
+                            <div class="mid">
+                                <div class="valor">
+                                    <img id="euro" src="../assets/img/EURO.png" alt="" srcset="">
+                                    <p>488,00</p>
+                                </div>
+                                <img id="chip" src="../assets/img/chip.png" alt="" srcset="">
+                            </div>
+                            <div class="bot">
+                                <div class="dados">
+                                    <h1>XXXX XXXX XXXX XXXX</h1>
+                                    <p>John Doe</p>
+                                </div>
+                                <div class="valid">
+                                    <h1>Valid</h1>
+                                    <p>11/27</p>
+                                </div>
+                                <div class="seg">
+                                    <h1>CVV</h1>
+                                    <p>659</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                    <div class="monthly">
+                        <h1 id="mon">Monthly</h1>
+                        <canvas class="line-chart"></canvas>
+                    </div>
+                    
                 </div>
             </div>
     </body>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="../scripts/index.js"></script>
 </html>

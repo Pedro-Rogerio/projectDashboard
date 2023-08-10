@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -43,21 +45,322 @@ nav{
   border-radius: 50%;
   height: 2rem;
   width: 1.8rem;
+  filter: brightness(130%);
+  cursor: default;
+}
+.media img:hover{
+  filter: brightness(150%);
+}
+.media i:hover{
+  color: #fc2a00;
+  cursor: default;
 }
 
 /*ASIDE*/
 .barra{
-  display: grid;
-  grid-template-columns: 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
   color: #545454;
   padding-left: 2rem;
   align-content: space-between;
   padding-top: 2rem;
-  height: 40vh;
-  width: 10rem;
+  height: 25vh;
+  width: 15vw;
+}
+.barra .i1{
+  display: flex;
+  gap: 0.5rem;
+}
+.barra .i1:hover{
+  color: #fc2a00;
+  cursor: default;
+}
+.barra .i2{
+  display: flex;
+  gap: 0.5rem;
+}
+.barra .i2:hover{
+  color: #fc2a00;
+  cursor: default;
+}
+.barra .i3{
+  display: flex;
+  gap: 0.5rem;
+}
+.barra .i3:hover{
+  color: #fc2a00;
+  cursor: default;
+}
+.barra .i4{
+  display: flex;
+  gap: 0.5rem;
+}
+.barra .i4:hover{
+  color: #fc2a00;
+  cursor: default;
+}
+.barra .i5{
+  display: flex;
+  gap: 0.5rem;
+}
+.barra .i5:hover{
+  color: #fc2a00;
+  cursor: default;
+}
+/*MAIN*/
+.main{
+  cursor: default;
+}
+.main #over{
+  color: #545454;
+  font-size: 2rem;
+  padding-left: 1rem;
+  font-family: 'Oswald', sans-serif;
+  margin-bottom: 1rem;
 }
 
 /*OVERVIEW*/
+.allcards{
+  display: flex;
+  justify-content: space-around;
+  width: 85vw;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+/*CARD 1*/
+
 .card1{
-  
+  display:grid;
+  grid-template-rows: 5rem 5rem 5rem;
+  width: 25rem;
+  border-radius: 1.5rem;
+  background: rgb(121,34,195);
+  background: linear-gradient(0deg, rgba(121,34,195,1) 0%, rgba(206,45,253,1) 100%);
+}
+.card1 .top{
+  display: flex;
+  width: 25rem;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 1.5rem;
+}
+.card1 .top img{
+  height: 3rem;
+}
+.card1 .mid{
+  display: flex;
+  width: 25rem;
+  justify-content: space-around;
+  align-items: center;
+}
+.card1 .mid .valor{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.card1 .mid .valor p{
+  font-size: 2rem;
+  color: #f5f5fa;
+  font-weight: bolder;
+}
+.card1 .mid .valor img{
+    height: 2rem;
+    margin-left: -1rem;
+    padding-right: 1rem;
+}
+.card1 .mid #chip{
+  height: 2.5rem;
+  margin-right: -1rem;
+}
+
+.card1 .bot{
+  display: grid;
+  width: 25rem;
+  grid-template-columns: 12rem 6rem 6rem ;
+  align-items: center;
+  justify-content: center;
+  margin-left: 2rem;
+  color: #f5f5fa;
+}
+.card1 .bot h1{
+  font-size: small;
+}
+.card1 .bot p{
+  font-size: smaller;
+}
+.card1 .bot .dados{
+  display: flex;
+  flex-direction: column;
+}
+.card1 .bot .valid{
+  display: flex;
+  flex-direction: column;
+}
+.card1 .bot .seg{
+  display: flex;
+  flex-direction: column;
+}
+/*CARD 2*/
+
+.card2{
+  display:grid;
+  grid-template-rows: 5rem 5rem 5rem;
+  width: 25rem;
+  border-radius: 1.5rem;
+  background: rgb(134,134,134);
+  background: linear-gradient(0deg, rgba(134,134,134,1) 0%, rgba(60,60,60,1) 100%);
+}
+.card2 .top{
+  display: flex;
+  width: 25rem;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 1.5rem;
+}
+.card2 .top img{
+  height: 3rem;
+  padding-right: 1rem;
+}
+.card2 .mid{
+  display: flex;
+  width: 25rem;
+  justify-content: space-around;
+  align-items: center;
+}
+.card2 .mid .valor{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.card2 .mid .valor p{
+  font-size: 2rem;
+  color: #f5f5fa;
+  font-weight: bolder;
+}
+.card2 .mid .valor img{
+    height: 2rem;
+    margin-left: -1rem;
+    padding-right: 1rem;
+}
+.card2 .mid #chip{
+  height: 2.5rem;
+  margin-right: -1rem;
+}
+
+.card2 .bot{
+  display: grid;
+  width: 25rem;
+  grid-template-columns: 12rem 6rem 6rem ;
+  align-items: center;
+  justify-content: center;
+  margin-left: 2rem;
+  color: #f5f5fa;
+}
+.card2 .bot h1{
+  font-size: small;
+}
+.card2 .bot p{
+  font-size: smaller;
+}
+.card2 .bot .dados{
+  display: flex;
+  flex-direction: column;
+}
+.card2 .bot .valid{
+  display: flex;
+  flex-direction: column;
+}
+.card2 .bot .seg{
+  display: flex;
+  flex-direction: column;
+}
+/*CARD 3*/
+
+.card3{
+  display:grid;
+  grid-template-rows: 5rem 5rem 5rem;
+  width: 25rem;
+  border-radius: 1.5rem;
+  background: rgb(233,159,40);
+  background: linear-gradient(0deg, rgba(233,159,40,1) 0%, rgba(255,78,0,1) 100%);
+}
+.card3 .top{
+  display: flex;
+  width: 25rem;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 1.5rem;
+}
+.card3 .top img{
+  height: 3rem;
+}
+.card3 .mid{
+  display: flex;
+  width: 25rem;
+  justify-content: space-around;
+  align-items: center;
+}
+.card3 .mid .valor{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.card3 .mid .valor p{
+  font-size: 2rem;
+  color: #f5f5fa;
+  font-weight: bolder;
+}
+.card3 .mid .valor img{
+    height: 2rem;
+    margin-left: -1rem;
+    padding-right: 1rem;
+}
+.card3 .mid #chip{
+  height: 2.5rem;
+  margin-right: -1rem;
+}
+
+.card3 .bot{
+  display: grid;
+  width: 25rem;
+  grid-template-columns: 12rem 6rem 6rem ;
+  align-items: center;
+  justify-content: center;
+  margin-left: 2rem;
+  color: #f5f5fa;
+}
+.card3 .bot h1{
+  font-size: small;
+}
+.card3 .bot p{
+  font-size: smaller;
+}
+.card3 .bot .dados{
+  display: flex;
+  flex-direction: column;
+}
+.card3 .bot .valid{
+  display: flex;
+  flex-direction: column;
+}
+.card3 .bot .seg{
+  display: flex;
+  flex-direction: column;
+}
+
+/*monthly*/
+
+.monthly{
+  display: flex;
+  flex-direction: column;
+  width: 45rem;
+}
+.monthly h1{
+  color: #545454;
+  font-size: 2rem;
+  padding-left: 1rem;
+  font-family: 'Oswald', sans-serif;
+  margin-bottom: 1rem;
 }
